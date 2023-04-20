@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa freeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 id = "title">Formulário de pesquisa sobre carros e viagens</h1>
+    <p id="description">Este é um formulário de pesquisa para um desafio freeCodeCamp.</p>
+</header>
+
+<form action="" id="survey-form">
+    
+    <div class="div form-group">
+        <label for="name" class="form-prompt">Nome</label>
+        <input type="text" id="name" required placeholder="Digite seu nome">
+    </div>
+    
+    <div class="div form-group">
+        <label for="email" class="form-prompt">Email</label>
+        <input type="text" id="email" required placeholder="Digite seu email">
+    </div>
+
+    <div class="div form-group">
+        <label for="age" class="form-prompt">Idade (opcional)</label>
+        <input type="number" min="10" max="100" id="age" required placeholder="Age">
+    </div>
+
+    <div class="div form-group">
+        <label for="" class="form-prompt">
+            Escolha o seu carro favorito
+        </label>
+        <select name="favorite" id="fav-car">
+            <option value="Camry" class="option">Toyota Camry</option>
+            <option value="Civic" class="option">Honda Civic</option>
+            <option value="Taurus" class="option">Ford Taurus</option>
+            <option value="Cruze" class="option">Chevy Cruze</option>
+            <option value="Sonata" class="option">Hyundia Sonata</option>
+        </select>
+
+        <div class="form-group">
+            
+            <label for="" class="form-prompt">Você recomendaria o carro que escolheu?</label>
+
+            <label>
+                <input type = "radio" value="definitely"  name="car-recommend"  class="radio-car-recommend" checked> Definitivamente
+            </label>
+    
+            <label>
+                <input type = "radio" value="maybe"  name="car-recommend"  class="radio-car-recommend"> Talvez
+            </label>
+    
+            <label>
+                <input type = "radio" value="not-sure"  name="car-recommend"  class="radio-car-recommend"> Não tenho certeza
+            </label>
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="places" class="form-prompt">Quais são os lugares que você gostaria de viajar?</label>
+
+            <label>
+                <input type = "checkbox" value="paris"  name="places"  class="places"> Paris, França
+            </label>
+
+            <label>
+                <input type = "checkbox" value="newYork"  name="places"  class="places"> Nova York, EUA
+            </label>
+
+            <label>
+                <input type = "checkbox" value="moscow"  name="places"  class="places"> Moscou, Rússia
+            </label>
+
+            <label>
+                <input type = "checkbox" value="berlim"  name="places"  class="places"> Berlim, Alemanha
+            </label>
+
+            <label>
+                <input type = "checkbox" value="stockholm"  name="places"  class="places"> Estocolmo, Suécia
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="comments" class="form-prompt">Algum comentário adicional?</label><br>
+            <textarea name="comments" id="comments" cols="100" rows="10" placeholder="Insira um comentário aqui..."></textarea>
+        </div>
+
+        <button class="submit-button" type="submit">Enviar</button>
+</form>
+    
+</body>
+</html>
